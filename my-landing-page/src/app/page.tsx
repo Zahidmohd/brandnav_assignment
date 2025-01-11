@@ -5,7 +5,7 @@ import FeatureSection from './components/FeatureSection'
 import UserCategories from './components/UserCategories'
 import DataAttributes from './components/DataAttributes'
 import Testimonials from './components/Testimonial'
-import FAQSection from './components/FaqSection'
+import FAQSection from './components/Faqsection'
 import Footer from './components/Footer'
 import DataAccuracy from './components/DataAccuracy'
 
