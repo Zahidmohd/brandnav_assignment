@@ -32,8 +32,27 @@ export default function FeatureSection() {
         </div>
 
         {/* Features Grid */}
-
-        <div className="space-y-6">
+        <div className="grid md:grid-cols-2 gap-12 items-center lg:px-[140px]">
+          {/* Enrich CSV Feature */}
+          <div className="relative">
+            <div className="z-10">
+              <div className="relative w-auto h-auto">
+                <Image
+                  src={Feature1}
+                  height={500}
+                  width={500}
+                  alt="CSV Enrichment Interface"
+                  objectFit="cover"
+                  className="rounded-lg"
+                />
+                <div className="flex flex-row gap-5 absolute top-[140px]">
+                  <Image src={feature11} height={180} width={180} alt="" />
+                  <Image src={feature12} height={180} width={180} alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="space-y-6">
             <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
               <svg
                 className="w-6 h-6 text-blue-600"
@@ -56,28 +75,6 @@ export default function FeatureSection() {
               you can enhance your data with enriched information and unlock new
               insights and opportunities.
             </p>
-            </div>
-        <div className="grid md:grid-cols-2 gap-12 items-center lg:px-[140px]">
-          {/* Enrich CSV Feature */}
-          <div className="relative">
-            <div className="z-10">
-              <div className="relative w-auto h-auto">
-                <Image
-                  src={Feature1}
-                  height={500}
-                  width={500}
-                  alt="CSV Enrichment Interface"
-                  objectFit="cover"
-                  className="rounded-lg"
-                />
-                <div className="flex flex-row gap-5 absolute top-[140px]">
-                  <Image src={feature11} height={180} width={180} alt="" />
-                  <Image src={feature12} height={180} width={180} alt="" />
-                </div>
-              </div>
-            </div>
-        
-         
 
             {/*
             {/* Pricing 
@@ -161,15 +158,6 @@ export default function FeatureSection() {
           </div>
 
           {/* Duplicate Enrich CSV Feature */}
-          <div className="space-y-6">
-            <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-              <Image src={filter} alt=""/>
-            </div>
-            <h3 className="text-2xl font-bold text-[#2A2665]">Advanced search with 25+ unique filters</h3>
-            <p className="text-[#6B7280] leading-relaxed text-[16px]">
-            BrandNav offers over 25+ filters to help users build highly segmented lists for better prospecting. With BrandNav, you can create highly targeted lists that are tailored to your specific needs, streamlining your workflow and maximizing your productivity.
-            </p>
-          </div>
           <div className="relative">
             <div className="">
               <div className="relative w-auto h-auto">
@@ -187,6 +175,15 @@ export default function FeatureSection() {
                 </div> */}
               </div>
             </div>
+          </div>
+          <div className="space-y-6">
+            <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+              <Image src={filter} alt=""/>
+            </div>
+            <h3 className="text-2xl font-bold text-[#2A2665]">Advanced search with 25+ unique filters</h3>
+            <p className="text-[#6B7280] leading-relaxed text-[16px]">
+            BrandNav offers over 25+ filters to help users build highly segmented lists for better prospecting. With BrandNav, you can create highly targeted lists that are tailored to your specific needs, streamlining your workflow and maximizing your productivity.
+            </p>
             {/* Pricing 
             <div className="flex flex-col justify-center items-start pb-10">
               <button className="bg-[#007bff] text-white px-6 py-2 rounded-lg w-full lg:w-[200px] hover:bg-blue-600 transition-colors mb-4">
