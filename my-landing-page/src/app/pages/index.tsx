@@ -1,25 +1,29 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import Hero from '../components/Hero'
-import Features from '../components/Features'
-import Testimonials from '../components/Testimonials'
+import React from 'react'
+import { Hero } from '../components/Hero'
+import PricingCard from '../components/PricingCard'
+import UserCategories from '../components/UserCategories'
+import DataAttributes from '../components/DataAttributes'
+import Testimonials from '../components/Testimonial'
+import FAQSection from '../components/Faqsection'
 import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
+import DataAccuracy from '../components/DataAccuracy'
+import Features from '../components/Features'
 
-const Home: NextPage = () => {
+
+const page = () => {
   return (
-    <>
-      <Head>
-        <title>Landing Page</title>
-      </Head>
-      <Navbar />
-      <Hero />
-      <Features />
-      <Testimonials />
-      <Footer />
-    </>
+    <div>
+      <Hero/>
+      <PricingCard/>
+      <Features/>
+      <DataAttributes/>
+      <DataAccuracy/>
+      <UserCategories/>
+      <Testimonials/>
+      <FAQsection/>
+      <Footer/>
+    </div>
   )
 }
 
-export default Home
+export default page
