@@ -1,13 +1,13 @@
 import React from 'react'
-import { Hero } from './Components/Hero'
-import PricingCard from './Components/PricingCard'
-import FeatureSection from './Components/FeatureSection'
-import UserCategories from './Components/UserCategories'
-import DataAttributes from './Components/DataAttributes'
-import Testimonials from './Components/Testimonial'
-import FAQSection from './Components/FaqSection'
-import Footer from './Components/Footer'
-import DataAccuracy from './Components/DataAccuracy'
+import { Hero } from './components/Hero'
+import PricingCard from './components/PricingCard'
+import FeatureSection from './components/FeatureSection'
+import UserCategories from './components/UserCategories'
+import DataAttributes from './components/DataAttributes'
+import Testimonials from './components/Testimonial'
+import FAQSection from './components/FaqSection'
+import Footer from './components/Footer'
+import DataAccuracy from './components/DataAccuracy'
 
 
 const page = () => {
