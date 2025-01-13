@@ -21,15 +21,15 @@ export default function PricingCard() {
       <div className="max-w-6xl w-full mx-auto grid md:grid-cols-2 gap-8 px-6 md:px-10 lg:px-20 items-center">
         
         {/* Left Side Text */}
-        <div className="text-white flex flex-col justify-center items-center text-center lg:text-left">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4">
+        <div className="text-white flex flex-col justify-center items-center text-center lg:text-right">
+          <h2 className="text-white text-xl md:text-2xl lg:text-3xl font-semibold mb-4">
             Not convinced yet?
           </h2>
-          <p className="text-xl md:text-2xl lg:text-3xl font-semibold">
+          <p className="text-white text-2xl md:text-3xl lg:text-4xl font-semibold">
             Take it for a{" "}
             <span className="text-[#007bff]">FREE</span> spin
           </p>
-          <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold mt-2">
+          <h2 className="text-white text-xl md:text-2xl lg:text-3xl font-semibold mt-2">
             before committing
           </h2>
         </div>
@@ -40,7 +40,7 @@ export default function PricingCard() {
             
             {/* Gift Icon */}
             <div className="w-12 h-12 mb-4">
-              <Image src={gift} alt="Gift" width={48} height={48} />
+              <Image src={gift} alt="Gift" width={48} height={8} />
             </div>
 
             {/* Pricing */}
