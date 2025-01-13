@@ -45,22 +45,22 @@ export default function UserCategories() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-2xl md:text-[28px] font-bold text-[#2A2665] mb-2  max-w-2xl mx-auto text-left sm:text-center">
+          <h2 className="text-2xl md:text-[28px] font-bold text-[#2A2665] mb-2 max-w-2xl mx-auto text-center">
             Who is using BrandNav?
           </h2>
-          <p className="text-[15px] lg:text-md md:text-md text-[#6B7280] max-w-2xl mx-auto text-left sm:text-center">
+          <p className="text-[15px] lg:text-md md:text-md text-[#6B7280] max-w-2xl mx-auto text-center">
             BrandNav has become an irreplaceable tool for businesses
           </p>
         </div>
 
         {/* Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {categories.map((category, index) => (
             <div
               key={index}
               className="border-none shadow-none bg-transparent"
             >
-              <div className="flex flex-col sm:items-center items-start text-left sm:text-center p-6">
+              <div className="flex flex-col items-center text-center p-6">
                 <div className="w-16 h-16 bg-[#3B82F6] text-white rounded-2xl flex items-center justify-center mb-6">
                   {category.icon}
                 </div>
