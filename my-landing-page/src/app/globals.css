@@ -128,5 +128,6 @@ button, input, textarea, select {
 
 /* Add this to your existing styles */
 body.menu-open {
-  overflow: hidden;
+  overflow-x: hidden;
+    overflow-y: hidden;
 }

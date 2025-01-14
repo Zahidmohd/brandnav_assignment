@@ -41,7 +41,7 @@ const testimonials: TestimonialProps[] = [
 
 export default function Testimonials() {
   return (
-    <div className="min-h-screen bg-[#E1F1FE] py-16 px-4">
+    <div className="min-h-screen bg-[#E1F1FE] py-16 px-4 overflow-hidden">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
@@ -56,7 +56,7 @@ export default function Testimonials() {
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-white shadow-lg rounded-lg">
               <div className="py-12 px-8">

@@ -26,7 +26,7 @@ export function Navbar() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8 relative">
         {/* Logo */}
         <div className="flex items-center">
-          <Link href="/" className="flex items-center space-x-2">
+          <Link href="/" aria-label="BrandNav Home" className="flex items-center space-x-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height={20}
@@ -46,6 +46,8 @@ export function Navbar() {
             <button
               onClick={() => setProductsOpen(!productsOpen)}
               className="flex items-center space-x-1 text-black hover:text-blue-500 hover:border hover:border-black hover:px-2 hover:py-1 hover:rounded-lg hover:border-2"
+              aria-expanded={productsOpen ? "true" : "false"}
+              aria-haspopup="true"
             >
               <span>Products</span>
               <ChevronDown className="h-4 w-4" />
@@ -57,6 +59,7 @@ export function Navbar() {
                     key={product.name}
                     href={product.href}
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    onClick={() => setProductsOpen(false)}
                   >
                     {product.name}
                   </Link>
@@ -83,6 +86,8 @@ export function Navbar() {
             <button
               onClick={() => setResourcesOpen(!resourcesOpen)}
               className="flex items-center space-x-1 text-black hover:text-blue-500 hover:border hover:border-black hover:px-2 hover:py-1 hover:rounded-lg hover:border-2"
+              aria-expanded={resourcesOpen ? "true" : "false"}
+              aria-haspopup="true"
             >
               <span>Resources</span>
               <ChevronDown className="h-4 w-4" />
@@ -94,6 +99,7 @@ export function Navbar() {
                     key={resource.name}
                     href={resource.href}
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    onClick={() => setResourcesOpen(false)}
                   >
                     {resource.name}
                   </Link>
@@ -123,6 +129,7 @@ export function Navbar() {
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           className="md:hidden text-black"
+          aria-label="Open mobile menu"
         >
           {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
@@ -138,6 +145,7 @@ export function Navbar() {
             <button
               onClick={() => setMobileMenuOpen(false)}
               className="text-white"
+              aria-label="Close mobile menu"
             >
               <X className="h-6 w-6" />
             </button>
@@ -147,6 +155,8 @@ export function Navbar() {
               <button
                 onClick={() => setProductsOpen(!productsOpen)}
                 className="flex w-full items-center justify-between py-2 text-base font-medium text-white"
+                aria-expanded={productsOpen ? "true" : "false"}
+                aria-haspopup="true"
               >
                 Products
                 <ChevronDown className="h-4 w-4" />
@@ -187,6 +197,8 @@ export function Navbar() {
               <button
                 onClick={() => setResourcesOpen(!resourcesOpen)}
                 className="flex w-full items-center justify-between py-2 text-base font-medium text-white"
+                aria-expanded={resourcesOpen ? "true" : "false"}
+                aria-haspopup="true"
               >
                 Resources
                 <ChevronDown className="h-4 w-4" />

@@ -13,7 +13,7 @@ import filter from "../../../public/filters.svg";
 
 export default function FeatureSection() {
   return (
-    <section className="bg-[#F8F7FF] py-16 px-4">
+    <section className="bg-[#F8F7FF] py-16 px-4 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
@@ -49,7 +49,10 @@ export default function FeatureSection() {
                 Enrich any CSV
               </h3>
               <p className="text-[#6B7280] leading-relaxed text-lg">
-                BrandNav transforms your CSV files by adding valuable contact, firmographics, and technographics data. With just a few clicks, you can enhance your data with enriched information and unlock new insights and opportunities. 
+                BrandNav transforms your CSV files by adding valuable contact,
+                firmographics, and technographics data. With just a few clicks,
+                you can enhance your data with enriched information and unlock
+                new insights and opportunities.
               </p>
             </div>
           </div>
@@ -57,32 +60,33 @@ export default function FeatureSection() {
             <Image
               src={Feature1}
               alt="CSV Enrichment Interface"
-              height={500}
+              layout="responsive"
               width={500}
-              className="rounded-lg shadow-lg"
+              height={500}
+              className="rounded-lg shadow-lg object-contain"
             />
             <div className="absolute flex gap-4 top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2">
               <Image
                 src={feature11}
                 alt=""
-                height={180}
-                width={180}
-                className="rounded-lg shadow-md"
+                layout="fixed"
+                width={100}
+                height={100}
+                className="rounded-lg shadow-md object-contain"
               />
               <Image
                 src={feature12}
                 alt=""
-                height={180}
-                width={180}
-                className="rounded-lg shadow-md"
+                layout="fixed"
+                width={100}
+                height={100}
+                className="rounded-lg shadow-md object-contain"
               />
             </div>
           </div>
-         
-
 
           {/* Fresh Data Updates Feature */}
-          <div className="flex flex-col gap-6 items-start text-left ">
+          <div className="flex flex-col gap-6 items-start text-left">
             <div>
               <div className="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center">
                 <Image src={db} alt="Database Icon" className="w-6 h-6" />
@@ -92,26 +96,32 @@ export default function FeatureSection() {
                   Fresh data updates everyday
                 </h3>
                 <p className="text-[#6B7280] leading-relaxed text-lg">
-                BrandNav updates its data every day, providing the most recent and accurate information to its users. With a constant stream of new information, BrandNav ensures that users have access to the latest contact, firmographics, and technographics data for better decision-making. 
+                  BrandNav updates its data every day, providing the most recent
+                  and accurate information to its users. With a constant stream
+                  of new information, BrandNav ensures that users have access to
+                  the latest contact, firmographics, and technographics data for
+                  better decision-making.
                 </p>
               </div>
             </div>
           </div>
-            <div>
+          <div>
             <div className="relative">
               <Image
                 src={Feature2}
                 alt="Fresh Data Updates Interface"
-                height={500}
+                layout="responsive"
                 width={500}
-                className="rounded-lg shadow-lg"
+                height={500}
+                className="rounded-lg shadow-lg object-contain"
               />
               <Image
                 src={feature21}
                 alt="Data Icon"
-                height={150}
-                width={150}
-                className="absolute right-20 bottom-20 rounded-lg shadow-md"
+                layout="fixed"
+                width={100}
+                height={100}
+                className="absolute right-4 bottom-4 rounded-lg shadow-md object-contain"
               />
             </div>
           </div>
@@ -126,21 +136,24 @@ export default function FeatureSection() {
                 Advanced search with 25+ unique filters
               </h3>
               <p className="text-[#6B7280] leading-relaxed text-lg">
-              BrandNav offers over 25+ filters to help users build highly segmented lists for better prospecting. With BrandNav, you can create highly targeted lists that are tailored to your specific needs, streamlining your workflow and maximizing your productivity.
+                BrandNav offers over 25+ filters to help users build highly
+                segmented lists for better prospecting. With BrandNav, you can
+                create highly targeted lists that are tailored to your specific
+                needs, streamlining your workflow and maximizing your
+                productivity.
               </p>
             </div>
           </div>
-          <div className="relative ">
+          <div className="relative">
             <Image
               src={feature3}
               alt="Advanced Search Interface"
-              height={500}
+              layout="responsive"
               width={500}
-              className="rounded-lg shadow-lg"
+              height={500}
+              className="rounded-lg shadow-lg object-contain"
             />
           </div>
-
-          
         </div>
       </div>
     </section>
