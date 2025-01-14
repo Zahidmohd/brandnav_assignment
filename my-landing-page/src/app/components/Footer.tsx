@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="flex justify-center items-center flex-col w-full px-4">
         {/* Banner Section */}
         <div
-          className="flex flex-col justify-center items-center h-[200px] lg:h-[400px] w-full max-w-6xl mb-12 px-6 md:px-10 lg:px-12 rounded-lg bg-cover bg-center"
+          className="flex flex-col justify-center items-center h-[300px] lg:h-[400px] w-full max-w-6xl mb-12 px-6 md:px-10 lg:px-12 rounded-lg bg-cover bg-center"
           style={{
             backgroundImage: `url(${bannerFotter.src})`,
           }}
