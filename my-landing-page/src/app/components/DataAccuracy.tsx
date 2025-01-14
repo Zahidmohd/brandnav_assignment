@@ -14,12 +14,12 @@ export default function DataAccuracy() {
         </h1>
 
         {/* Before/After Container */}
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-0 max-w-6xl mx-auto h-full w-full justify-center">
+        <div className="grid md:grid-cols-2 gap-8 lg:gap-5 max-w-6xl mx-auto h-full w-full justify-center">
           <div className="flex justify-center items-center px-[20px] md:justify-end lg:pr-[50px]">
             <Image
               src={before}
-              height={380}
-              width={370}
+              height={500}
+              width={500}
               alt="Before Image"
               className="lg:mr-[-30px]"
             />
@@ -27,8 +27,8 @@ export default function DataAccuracy() {
           <div className="flex justify-center items-center px-[20px] md:justify-start lg:pl-[50px]">
             <Image
               src={after}
-              height={450}
-              width={450}
+              height={500}
+              width={750}
               alt="After Image"
               className="lg:ml-[-30px]"
             />

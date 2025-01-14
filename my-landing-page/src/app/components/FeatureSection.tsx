@@ -26,33 +26,8 @@ export default function FeatureSection() {
         </div>
 
         {/* Features Grid */}
-        <div className="grid md:grid-cols-2 gap-16">
+        <div className="lg:grid md:flex lg:grid-cols-2 gap-16 gap-y-12">
           {/* Enrich CSV Feature */}
-          <div className="relative">
-            <Image
-              src={Feature1}
-              alt="CSV Enrichment Interface"
-              height={500}
-              width={500}
-              className="rounded-lg shadow-lg"
-            />
-            <div className="absolute flex gap-4 top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2">
-              <Image
-                src={feature11}
-                alt=""
-                height={180}
-                width={180}
-                className="rounded-lg shadow-md"
-              />
-              <Image
-                src={feature12}
-                alt=""
-                height={180}
-                width={180}
-                className="rounded-lg shadow-md"
-              />
-            </div>
-          </div>
           <div className="flex flex-col gap-6 items-start text-left">
             <div className="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center">
               <svg
@@ -78,6 +53,32 @@ export default function FeatureSection() {
               </p>
             </div>
           </div>
+          <div className="relative order-first">
+            <Image
+              src={Feature1}
+              alt="CSV Enrichment Interface"
+              height={500}
+              width={500}
+              className="rounded-lg shadow-lg"
+            />
+            <div className="absolute flex gap-4 top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2">
+              <Image
+                src={feature11}
+                alt=""
+                height={180}
+                width={180}
+                className="rounded-lg shadow-md"
+              />
+              <Image
+                src={feature12}
+                alt=""
+                height={180}
+                width={180}
+                className="rounded-lg shadow-md"
+              />
+            </div>
+          </div>
+         
 
 
           {/* Fresh Data Updates Feature */}
@@ -116,16 +117,7 @@ export default function FeatureSection() {
           </div>
 
           {/* Advanced Search Feature */}
-          <div className="relative">
-            <Image
-              src={feature3}
-              alt="Advanced Search Interface"
-              height={500}
-              width={500}
-              className="rounded-lg shadow-lg"
-            />
-          </div>
-          <div className="flex flex-col gap-6 items-start text-left">
+          <div className="flex flex-col gap-6 items-start text-left order-last">
             <div className="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center">
               <Image src={filter} alt="Filter Icon" className="w-6 h-6" />
             </div>
@@ -138,6 +130,16 @@ export default function FeatureSection() {
               </p>
             </div>
           </div>
+          <div className="relative ">
+            <Image
+              src={feature3}
+              alt="Advanced Search Interface"
+              height={500}
+              width={500}
+              className="rounded-lg shadow-lg"
+            />
+          </div>
+
           
         </div>
       </div>

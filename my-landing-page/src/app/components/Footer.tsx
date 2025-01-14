@@ -11,25 +11,22 @@ export default function Footer() {
       <div className="flex justify-center items-center flex-col w-full px-4">
         {/* Banner Section */}
         <div
-          className="hidden lg:flex md:flex flex-col justify-center items-center h-[400px] w-full max-w-6xl mb-12 px-6 md:px-10 lg:px-12 rounded-lg"
+          className="flex flex-col justify-center items-center h-[200px] lg:h-[400px] w-full max-w-6xl mb-12 px-6 md:px-10 lg:px-12 rounded-lg bg-cover bg-center"
           style={{
             backgroundImage: `url(${bannerFotter.src})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "contain",
-            backgroundPosition: "center",
           }}
         >
           <div className="text-center">
-            <h2 className="text-2xl md:text-4xl font-bold text-white mb-4 max-w-2xl leading-tight">
+            <h2 className="text-xl lg:text-4xl font-bold text-white mb-4 max-w-2xl leading-tight">
               Want to see BrandNav in action?
             </h2>
-            <h3 className="text-lg md:text-xl text-white mb-6">
+            <h3 className="text-sm lg:text-xl text-white mb-6">
               Try BrandNav for free today!
             </h3>
           </div>
 
-          <div className="flex flex-col items-center space-y-4">
-            <button className="bg-[#007bff] hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg w-full md:w-auto transition-all">
+          <div className="flex flex-col lg:flex-row items-center space-y-4 lg:space-y-0 lg:space-x-4">
+            <button className="bg-[#007bff] hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg w-full lg:w-auto transition-all">
               Grab free leads
             </button>
 
@@ -47,30 +44,11 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Fallback Banner for Smaller Screens */}
-        <div
-          className="lg:hidden md:hidden flex flex-col justify-center items-center h-[200px] w-full max-w-6xl mb-12 px-6 md:px-10 lg:px-12 rounded-lg bg-cover bg-center"
-          style={{ backgroundImage: `url(${bannerFotter.src})` }}
-        >
-          <div className="text-center">
-            <h2 className="text-xl font-bold text-white mb-4 leading-tight">
-              Want to see BrandNav in action?
-            </h2>
-            <h3 className="text-sm text-white mb-6">
-              Try BrandNav for free today!
-            </h3>
-          </div>
-
-          <button className="bg-white hover:bg-gray-200 text-[#007bff] font-semibold px-4 py-2 rounded-lg w-auto transition-all">
-            Grab free leads
-          </button>
-        </div>
-
         {/* Footer Links Section */}
         <div className="container mx-auto px-0 md:px-10 lg:px-[140px]">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:pl-10">
+          <div className="grid grid-cols-2 lg:grid-cols-5 gap-8 lg:pl-10">
             {/* Brand Column */}
-            <div>
+            <div className="col-span-2 lg:col-span-1">
               <Link href="/" className="text-[#1A1B1E] text-xl font-semibold">
                 BrandNav.io
               </Link>
@@ -162,7 +140,7 @@ export default function Footer() {
           {/* Copyright Section */}
           <div className="mt-16 pt-8 border-t border-gray-200">
             <p className="text-center text-gray-500 text-sm">
-              © 2022 BrandNav. All rights reserved
+              © {new Date().getFullYear()} BrandNav. All rights reserved
             </p>
           </div>
         </div>
