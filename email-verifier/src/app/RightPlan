@@ -1,0 +1,77 @@
+import React from "react";
+import Image from "next/image";
+
+const RightPlan: React.FC = () => {
+    return (
+        <div
+            style={{
+                width: "100vw",
+                height: "100vh",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+                gap: "80px",
+                position: "relative",
+                backgroundColor: "#09061A", // Optional: Add a background color for visibility
+            }}
+        >
+            <div
+                style={{
+                    width: "1020px",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    gap: "24px",
+                }}
+            >
+                <h1
+                    style={{
+                        fontSize: "58px",
+                        fontWeight: 500,
+                        lineHeight: "64.96px",
+                        textAlign: "center",
+                        textDecorationSkipInk: "none",
+                        color: "#F0F0F0",
+                    }}
+                >
+                    Choose the right plan for you
+                </h1>
+                <p
+                    style={{
+                        fontSize: "18px",
+                        fontWeight: 400,
+                        lineHeight: "21.94px",
+                        textAlign: "center",
+                        textDecorationSkipInk: "none",
+                        color: "#F0F0F0",
+                    }}
+                >
+                    With great power comes great plans
+                </p>
+            </div>
+            <div
+                style={{
+                    width: "1020px",
+                    display: "flex",
+                    justifyContent: "center",
+                    gap: "40px",
+                }}
+            >
+                <Image
+                    src="/Logos & Images/credit selector card.svg"
+                    alt="credit"
+                    width={600}
+                    height={570}
+                />
+                <Image
+                    src="/Logos & Images/monthly rates card.png"
+                    alt="monthly rates"
+                    width={420}
+                    height={532}
+                />
+            </div>
+        </div>
+    );
+};
+export default RightPlan;
