@@ -1,10 +1,11 @@
 import React from 'react'
-import EmailChecker from './components/EmailChecker'
-
+import EmailVerifier from './components/EmailVerifier'
+import HowItWorks from './components/Howitwork'
 const page = () => {
   return (
     <div>
-      <EmailChecker/>
+      <EmailVerifier/>
+      <HowItWorks/>
     </div>
   )
 }
