@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-size: 62.5%;
+  }
+
+  *,
+  *::before,
+  *::after {
+    font-family: "Montserrat";
+    box-sizing: border-box;
+  }
+
+  @font-face {
+    font-family: "NexaBold";
+    src: url("/fonts/NexaBold.otf");
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  .max-container {
+    width: 100%;
+    max-width: 1280px;
+    margin-inline: auto;
+  }
+}
+
+@layer utilities {
+  .load-animation {
+    animation: load 2s linear 1s 1 forwards;
+  }
+  @keyframes load {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+}
